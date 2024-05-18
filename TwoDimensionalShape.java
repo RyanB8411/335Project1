@@ -5,5 +5,13 @@ public class TwoDimensionalShape extends Shape {
         super(2);
     }
 
-    // getters and setters
+    // getter and setter for area
+    public double getArea() {
+        return area;
+    }
+
+    public void setArea(double area) {
+
+        this.area = area;
+    }
 }
