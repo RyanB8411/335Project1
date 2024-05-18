@@ -7,11 +7,11 @@ public class Main{
         double length = scan.nextDouble();
         System.out.println("Please enter the width of the rectangle\t");
         double width = scan.nextDouble();
-        Rectangle rec1 = new Rectangle(length, width);
+        Rectangle rec1 = new Rectangle(2,length, width);
         System.out.println("The area of the rectangle is " + rec1.getArea());
         System.out.println("Enter a new length:\t");
         double length2 = scan.nextDouble();
-        rec1.setLength(length2);
+        rec1.setDimension1(length2);
         System.out.println(rec1.getArea());
     }
 }

@@ -1,40 +1,20 @@
-public class Rectangle extends TwoDimensionalShape {
-    private double length;
-    private double width;
-    private double area;
+/**Rectangle Class
+ * 18May2024
+ * Ryan Burkhardt
+ * This class will be used to make a rectangle object that calculates
+ * its area based off length and width using its parent class two dimensional
+ * shape.
+ */
 
-    public Rectangle(double length, double width) {
-        this.length = length;
-        this.width = width;
-        area = length * width;
-    }
+public class Rectangle extends TwoDimensionalShape {//Extend our class
+    //State our variables
+    public double length;
+    public double width;
+    public double area;
 
-    // getters and setters for length and width
-    public double getLength() {
-        return length;
-    }
-
-    public void setLength(double length) {
-        this.length = length;
-        super.setArea(area);
-    }
-
-    public double getWidth() {
-        return width;
-    }
-
-    public void setWidth(double width) {
-        this.width = width;
-        super.setArea(area);
-    }
-
-    @Override
-    public void setArea(double area) {
-        this.area = length * width;
-    }
-
-    @Override
-    public double getArea(){
-        return area;
+    //Construct our object and also set its area inside the object
+    public Rectangle(int numberOfDimensions, double length, double width) {
+        super(numberOfDimensions, length, width);
+        setArea(length, width);
     }
 }
