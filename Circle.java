@@ -1,3 +1,8 @@
+
 public class Circle extends TwoDimensionalShape {
-    // properties and methods specific to a Circle
+    public double radius;
+    Circle(int numberOfDimensions, double radius, double area){
+        super(numberOfDimensions, area=(radius*Math.PI*Math.PI));
+        this.radius = radius;
+    }
 }

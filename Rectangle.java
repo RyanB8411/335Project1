@@ -10,11 +10,15 @@ public class Rectangle extends TwoDimensionalShape {//Extend our class
     //State our variables
     public double length;
     public double width;
-    public double area;
 
     //Construct our object and also set its area inside the object
-    public Rectangle(int numberOfDimensions, double length, double width) {
-        super(numberOfDimensions, length, width);
-        setArea(length, width);
+    public Rectangle(int numberOfDimensions, double length, double width, double area) {
+        super(numberOfDimensions, area=length*width);
+        this.length = length;
+        this.width = width;
+    }
+    @Override
+    public double getArea() {
+        return area;
     }
 }
