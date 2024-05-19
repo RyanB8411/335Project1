@@ -12,12 +12,12 @@
 
     //Construct our object and also set its area inside the object
     public Square(int numberOfDimensions, double side, double area) {
-        super(numberOfDimensions, area = side * side);
+        super(numberOfDimensions, side * side);
         this.side = side;
     }
     public void setSide(double side){
         this.side = side;
-        super.setArea(area = side * side);
+        super.setArea(side * side);
     }
     public double getSide(){
         return side;

@@ -6,7 +6,7 @@ public class Triangle extends TwoDimensionalShape {
 
     //Construct our object
     Triangle(int numberOfDimensions, double base, double height, double area){
-        super(numberOfDimensions, area = (.5 * (base * height)));
+        super(numberOfDimensions, (.5 * (base * height)));
         this.base = base;
         this.height = height;
     }
@@ -14,11 +14,11 @@ public class Triangle extends TwoDimensionalShape {
     //the parent class.
     public void setBase(double base){
         this.base = base;
-        super.setArea(area = (.5 * (base * height)));
+        super.setArea((.5 * (base * height)));
     }
     public void setHeight(double height) {
         this.height = height;
-        super.setArea(area = (.5 * (base * height)));
+        super.setArea((.5 * (base * height)));
     }
     public double getBase(){
         return base;

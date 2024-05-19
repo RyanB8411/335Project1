@@ -13,7 +13,7 @@ public class Rectangle extends TwoDimensionalShape {//Extend our class
 
     //Construct our object and also set its area inside the object
     public Rectangle(int numberOfDimensions, double length, double width, double area) {
-        super(numberOfDimensions, area=length*width);
+        super(numberOfDimensions, length*width);
         this.length = length;
         this.width = width;
     }
@@ -21,11 +21,11 @@ public class Rectangle extends TwoDimensionalShape {//Extend our class
     //the area every time the length or width is updated
     public void setLength(double length){
         this.length = length;
-        super.setArea(area = length * width);
+        super.setArea(length * width);
     }
     public void setWidth(double width){
         this.width = width;
-        super.setArea(area = length * width);
+        super.setArea(length * width);
     }
     public double getLength() {
         return length;

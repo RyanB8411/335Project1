@@ -68,7 +68,31 @@ public class Main{
                     dimension2 = input.nextDouble();
                     Triangle triangle = new Triangle(numOfDimensions, dimension1, dimension2, area);
                     System.out.println("\nThe area of the triangle is: " + triangle.getArea()+"\n");
-
+                    case 5:
+                    numOfDimensions = 3;
+                    System.out.println("\nYou have selected Sphere.\n");
+                    System.out.println("\nEnter the radius of the sphere:\n");
+                    dimension1 = input.nextDouble();
+                    Sphere sphere = new Sphere(numOfDimensions, dimension1, volume);
+                    System.out.println("\nThe volume of the sphere is: " + sphere.getVolume()+"\n");
+                    break;
+                    case 6:
+                    numOfDimensions = 3;
+                    System.out.println("\nYou have selected Cube.\n");
+                    System.out.println("\nEnter the side length of the cube:\n");
+                    dimension1 = input.nextDouble();
+                    Cube cube = new Cube(numOfDimensions, dimension1, volume);
+                    System.out.println("\nThe volume of the cube is: " + cube.getVolume()+"\n");
+                    break;
+                    case 8:
+                    numOfDimensions = 3;
+                    System.out.println("\nYou have selected Cylinder.\n");
+                    System.out.println("\nEnter the radius of the cylinder:\n");
+                    dimension1 = input.nextDouble();
+                    System.out.println("\nEnter the height of the cylinder:\n");
+                    dimension2 = input.nextDouble();
+                    Cylinder cylinder = new Cylinder(numOfDimensions, dimension1, dimension2, volume);
+                    System.out.println("\nThe volume of the cylinder is: " + cylinder.getVolume()+"\n");
                     break;
                     case 10:
                     menu = false;
@@ -122,4 +146,7 @@ public class Main{
 //triangle.setBase(12);
 // triangle.setHeight(12);
 // System.out.println("\nThe area of the updated triangle is: " + triangle.getArea()+"\n");
+
+// sphere.setRadius(10);
+// System.out.println("\nThe volume of the updated sphere is: " + sphere.getVolume()+"\n");
 
