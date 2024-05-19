@@ -33,5 +33,4 @@ public class Rectangle extends TwoDimensionalShape {//Extend our class
     public double getWidth() {
         return width;
     }
-    
 }
