@@ -1,7 +1,8 @@
 /**Two Dimensional Object Class
  * 18May2024
  * Ryan Burkhardt
- * This class will extend the shape class and add the area and number of dimensions to 2
+ * This class will extend the shape class and add area to be calculated in the
+ * constructor.
  */
 
  //Extend the class

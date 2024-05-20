@@ -11,7 +11,7 @@
     private double radius;
     private double height;
     
-    //Construct our cylinder
+    //Construct our cone
     Cone(int numberOfDimensions, double radius, double height, double volume){
         super(numberOfDimensions, (1.0/3.0) * Math.PI * Math.pow(radius, 2) * height);;
         this.radius = radius;

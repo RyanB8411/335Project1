@@ -10,7 +10,7 @@
  public class Cube extends ThreeDimensionalShape {
     private double side;
     
-    //Construct our sphere
+    //Construct our cube
     Cube(int numberOfDimensions, double side, double volume){
         super(numberOfDimensions, Math.pow(side, 3));;
         this.side = side;

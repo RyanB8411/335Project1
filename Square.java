@@ -1,4 +1,4 @@
-/**Rectangle Class
+/**Square Class
  * 18May2024
  * Ryan Burkhardt
  * This class will be used to make a square object that calculates
@@ -15,6 +15,7 @@
         super(numberOfDimensions, side * side);
         this.side = side;
     }
+    //Getters and Setters for the side
     public void setSide(double side){
         this.side = side;
         super.setArea(side * side);

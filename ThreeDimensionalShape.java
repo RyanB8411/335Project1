@@ -2,7 +2,8 @@
  * 18May2024
  * Ryan Burkhardt
  * This class will be used to extend the shape class to add three dimension and 
- * the volume to our object
+ * the volume to our object it takes in the number of dimensions from the shape 
+ * and adds the volume to the three dimensional shape
  */
 
  //Extend our Shape

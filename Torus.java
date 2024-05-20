@@ -2,7 +2,8 @@
  * 18May2024
  * Ryan Burkhardt
  * This class will be used to make a Torus object that calculates
- * its volume based off the radius and its starting edge from the center using its parent class three dimensional
+ * its volume based off the radius and its starting edge from the
+ * center using its parent class three dimensional
  * shape.
  */
 

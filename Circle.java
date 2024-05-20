@@ -13,13 +13,13 @@ public class Circle extends TwoDimensionalShape {
 
     //Construct Circle Object and call super for number of dimensions and area
     Circle(int numberOfDimensions, double radius, double area){
-        super(numberOfDimensions, area=(Math.PI * (radius * radius)));
+        super(numberOfDimensions, (Math.PI * (radius * radius)));
         this.radius = radius;
     }
     //getters and setters for Circle class
     public void setRadius(double radius){
         this.radius = radius;
-        super.setArea(area=(Math.PI * (radius * radius)));//update area as you update radius
+        super.setArea(Math.PI * (radius * radius));//update area as you update radius
     }
     public double getRadius(){
         return radius;
